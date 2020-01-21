@@ -23,7 +23,7 @@ class Car extends Vehicle {
     // cars can also do their own thing.
     constructor(name){
 
-        Vehicle(name, 4);
+        super(name, 4);
     
     }
   }
@@ -33,7 +33,7 @@ class Motorcycle extends Vehicle {
     // Motorcycle can also do their own thing.
 
     constructor(name){
-        Vehicle(name,2);
+      super(name,2);
     }
 
     wheelie() {
@@ -43,4 +43,4 @@ class Motorcycle extends Vehicle {
 
 
 
-module.exports = Vehicle;
+module.exports = {Car,Motorcycle};
